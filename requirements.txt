@@ -13,4 +13,3 @@ SAValidation==0.3.0
 SQLAlchemy==1.0.8
 tabutils==0.18.1
 Werkzeug==0.10.4
-requests==2.4.3
