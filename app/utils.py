@@ -51,8 +51,7 @@ def fetch_data(config):
         msg += 'Please view tabutils.io documentation for assistance.'
         raise TypeError(msg)
 
-    constraints = [
-        ('adm0_name', 'k'), ('mp_month', '3'), ('mp_year', '2015')]
+    constraints = [('adm0_name', 'a'), ('mp_month', '3'), ('mp_year', '2015')]
 
     filterer = lambda x: all(x[k].lower().startswith(v) for k, v in constraints)
     return it.ifilter(filterer, records)
