@@ -36,9 +36,9 @@ db = SQLAlchemy()
 
 __title__ = 'HDX-FILE-PROXY-API'
 __author__ = 'Reuben Cummings'
-__description__ = 'Service to query the age and status of an HDX resource'
+__description__ = 'Service to proxy csv and excel files on HDX'
 __email__ = 'reubano@gmail.com'
-__version__ = '0.6.2'
+__version__ = '0.3.0'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2015 Reuben Cummings'
 
@@ -55,8 +55,7 @@ def create_app(config_mode=None, config_file=None):
 
     Kwargs:
         config_mode (str): The configuration mode. Must be a `class` in
-            `config.py`. One of ('Production', 'Development', 'Test',
-            'Docker')
+            `config.py`. One of ('Production', 'Development', 'Test')
         config_file (str): The configuration file.
 
     Returns:
